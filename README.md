@@ -20,6 +20,6 @@
 
 <br>
 
-フロントの詳細を知りたいかたはこちらを
+フロントの詳細を知りたいかたは[こちら](https://github.com/K-Daiki-0ne/Restaurant_Searcher/tree/master/client/README.md)を
 
-バックエンドの詳細を知りたいかたはこちらを
+バックエンドの詳細を知りたいかたは[こちら](https://github.com/K-Daiki-0ne/Restaurant_Searcher/tree/master/server/README.md)を
