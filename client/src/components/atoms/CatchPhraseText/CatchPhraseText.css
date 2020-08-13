@@ -1,0 +1,17 @@
+.catchphrase {
+  margin-top: 30%;
+  width: 100%;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 50px;
+  line-height: 50px;
+  color: #FAFAFA;
+  text-align: center;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .catchphrase {
+    font-size: 10px;
+    line-height: 10px;
+  }
+}
