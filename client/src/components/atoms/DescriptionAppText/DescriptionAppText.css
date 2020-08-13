@@ -1,0 +1,18 @@
+.descriptiontext {
+  margin-top: 10%;
+  width: 100%;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 25px;
+  color: #FAFAFA;
+  text-align: center;
+  text-shadow: 5px 6px 7px #212121;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .descriptiontext {
+    font-size: 5px;
+    line-height: 5px;
+  }
+}
