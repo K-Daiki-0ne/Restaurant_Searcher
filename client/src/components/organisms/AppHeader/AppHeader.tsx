@@ -1,9 +1,10 @@
 import React from 'react'
+import './AppHeader.css';
 
 export function AppHeaer() {
   return (
-    <div>
-      
+    <div className='header'>
+
     </div>
   )
 }

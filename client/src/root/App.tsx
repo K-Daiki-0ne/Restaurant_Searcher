@@ -5,7 +5,7 @@ import { AppHeaer } from '../components/organisms/index';
 
 function App() {
   return (
-    <div>
+    <div className='app'>
       <AppHeaer />
       <Router />
     </div>

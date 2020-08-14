@@ -1,7 +1,10 @@
 .home {
   display: flex;
   background-image: url(home.jpg);
-  background-size: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
   height: 100%;
   text-align: center;
   justify-content: center;
