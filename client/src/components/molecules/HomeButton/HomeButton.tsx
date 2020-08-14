@@ -1,7 +1,14 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-export function DetailRestaurantAdressText() {
+export function HomeButton() {
   return (
-    <p>DetailRestaurantAdressText</p>
+    <div>
+      <Link to="/">
+        <button>
+          {/* HeaderTitleText */}
+        </button>
+      </Link>
+    </div>
   )
 }
