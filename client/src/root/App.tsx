@@ -1,10 +1,14 @@
 import React from 'react';
 import { Router } from '../router/Router';
-import './App.css'
+import './App.css';
+import { AppHeaer } from '../components/organisms/index';
 
 function App() {
   return (
-    <Router />
+    <div>
+      <AppHeaer />
+      <Router />
+    </div>
   )
 }
 
