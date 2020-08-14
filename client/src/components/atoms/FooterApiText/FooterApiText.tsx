@@ -1,7 +1,11 @@
 import React from 'react'
 
-export function DetailRestaurantAdressText() {
+export function FooterApiText() {
   return (
-    <p>DetailRestaurantAdressText</p>
+    <div>
+      <h4>
+        使用するAPIについて記述する
+      </h4>
+    </div>
   )
 }
