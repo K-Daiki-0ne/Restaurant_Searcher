@@ -7,9 +7,7 @@ export const HomeButton: React.FC = () => {
   return (
     <div>
       <Link to='/'>
-        <button>
-          <HeaderTitleText />
-        </button>
+        <HeaderTitleText />
       </Link>
     </div>
   )
