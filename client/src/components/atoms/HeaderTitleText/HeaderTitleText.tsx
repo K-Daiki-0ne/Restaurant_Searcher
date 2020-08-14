@@ -1,8 +1,9 @@
 import React from 'react';
+import './HeaderTitleText.css';
 
 export function HeaderTitleText() {
   return (
-    <div>
+    <div className='header-title'>
       <h3>RestrauntSearcher</h3>
     </div>
   )
