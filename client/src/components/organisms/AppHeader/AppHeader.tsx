@@ -1,7 +1,9 @@
 import React from 'react'
 
-export function DetailRestaurantAdressText() {
+export function AppHeaer() {
   return (
-    <p>DetailRestaurantAdressText</p>
+    <div>
+      
+    </div>
   )
 }

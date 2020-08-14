@@ -1,1 +1,1 @@
-export const issue = 'ioslatedModuleの対処'
+export { AppHeaer } from './AppHeader/AppHeader';
