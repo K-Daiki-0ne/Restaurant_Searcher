@@ -1,13 +1,17 @@
 .home {
+  height: 100%;
+}
+
+.image {
   display: flex;
   background-image: url(home.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  height: 100%;
   text-align: center;
   justify-content: center;
+  height: 100%;
 }
 
 @media (min-width: 320px) and (max-width: 480px) {

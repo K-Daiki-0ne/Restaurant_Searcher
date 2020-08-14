@@ -1,14 +1,13 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { HeaderTitleText } from '../../atoms/index';
+import { Link } from 'react-router-dom'
 
-export function HomeButton() {
+
+export const HomeButton: React.FC = () => {
   return (
     <div>
-      <Link to="/">
-        <button>
-          <HeaderTitleText />
-        </button>
+      <Link to='/'>
+        <HeaderTitleText />
       </Link>
     </div>
   )

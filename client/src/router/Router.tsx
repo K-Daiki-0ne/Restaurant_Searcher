@@ -9,10 +9,10 @@ import {
   Error
 } from '../pages/index';
 
-export function Router() {
+export const Router: React.FC = (): JSX.Element => {
   return (
     <BrowserRouter>
-      <Route exact path='/' component={Home} />
+      <Route exact path="/" component={Home} />
       <Route path='/list' component={List} />
       <Route path='/detail' component={Detail} />
       <Route path='/login' component={Login} />
