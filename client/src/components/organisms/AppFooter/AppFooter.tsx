@@ -1,11 +1,10 @@
 import React from 'react'
+import './AppFooter.css';
 
 export function AppFooter() {
   return (
-    <div className='app-footer'>
-      <footer className='footer'>
+    <footer className='footer'>
 
-      </footer>
-    </div>
+    </footer>
   )
 }
