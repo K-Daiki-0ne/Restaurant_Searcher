@@ -1,0 +1,13 @@
+.author-text {
+  margin-top: auto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  text-align: center;
+  color: #212121;
+}
+
+.link {
+  text-decoration: none;
+  color: #212121;
+}
