@@ -2,9 +2,21 @@
 
 .header-title {
   font-family: 'Lobster', cursive;
-  font-size: 25px;
-  line-height: 25px;
+  margin-top: -3.5%;
+  font-size: 50px;
+  line-height: 50px;
   font-weight: bold;
   text-align: center;
   color: #212121;
+  text-decoration: none;
+  border-style: none;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .header-title {
+    margin-top: 8%;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+  }
 }
