@@ -1,7 +1,10 @@
 import React from 'react'
 
-export function DetailRestaurantAdressText() {
+export function FooterAuthorText() {
   return (
-    <p>DetailRestaurantAdressText</p>
+    <h4>
+      Create: K_Daiki,
+      <a href="https://github.com/K-Daiki-0ne/Restaurant_Searcher">Code</a>
+    </h4>
   )
 }
