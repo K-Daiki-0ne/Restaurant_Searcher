@@ -1,0 +1,35 @@
+.grid {
+  display: grid;
+  width: 60%;
+  margin-top: 8%;
+  height: 15%;
+  grid-template-columns: 200px 1fr;
+}
+.restraunt-image {
+  border: 2px solid #212121;
+  border-collapse: collapse;
+  background: #FAFAFA;
+}
+
+.restraunt-content {
+  border: 2px solid #212121;
+  border-left: none;
+  grid-template-rows: 100px;
+  background: #FAFAFA;
+  text-align: center;
+}
+
+.name {
+  border: 2px solid #212121;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+}
+
+.adress {
+  border: 2px solid #212121;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: none;
+}

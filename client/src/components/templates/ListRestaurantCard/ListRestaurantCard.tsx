@@ -1,7 +1,27 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom'
+import './ListRestaurantCard.css';
 
-export function DetailRestaurantAdressText() {
+export const ListRestaurantCard: React.FC = () => {
   return (
-    <p>DetailRestaurantAdressText</p>
+  <div className="grid">
+    <Link to='/detail'>
+      <article className="restraunt-image">
+        <p>お店の画像</p>
+      </article>
+      <article className="restraunt-content">
+        <section className='name'>
+          <p>
+            お店の名前
+          </p>
+        </section>
+        <section className='adress'>
+          <p>
+            お店の住所
+          </p>
+        </section>
+      </article>
+    </Link>
+  </div>
   )
 }
