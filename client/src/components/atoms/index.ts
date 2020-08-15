@@ -7,3 +7,4 @@ export { FooterImageUrlText } from './FooterImageUrlText/FooterImageUrlText';
 export { HeaderLoginText } from './HeaderLoginText/HeaderLoginText';
 export { HeaderQuestionIcon } from './HeaderQuestionIcon/HeaderQuestionIcon';
 export { ModalCloseIcon } from './ModalCloseIcon/ModalCloseIcon';
+export { ModalDescriptionText } from './ModalDescriptionText/ModalDescriptionText';
