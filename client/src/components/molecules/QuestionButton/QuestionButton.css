@@ -13,3 +13,12 @@
   cursor:pointer;
   overflow: hidden;
 }
+
+.close {
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  border: none;
+  cursor:pointer;
+  overflow: hidden;
+  float: right;
+}

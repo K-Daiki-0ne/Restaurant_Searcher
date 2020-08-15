@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
-import { HeaderQuestionIcon } from '../../atoms/index';
+import { 
+  HeaderQuestionIcon,
+  ModalCloseIcon 
+} from '../../atoms/index';
 import Modal from 'react-modal';
 import './QuestionButton.css';
 
@@ -27,8 +30,8 @@ export const QuestionButton: React.FC = () => {
         onRequestClose={closeModal}
         contentLabel='RestrauntSearcherについて'
       >
-        <button onClick={closeModal}>
-          Close
+        <button onClick={closeModal} className='close'>
+          <ModalCloseIcon />
         </button>
         <p>
           サンプル
