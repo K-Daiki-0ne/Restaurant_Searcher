@@ -6,17 +6,24 @@
   justify-content: center;
 }
 
+.question-button {
+  width: 25%;
+  float: left;
+  text-align: center;
+  justify-items: center;
+  justify-content: center;
+}
+
 .main-text {
   width: 50%;
-  margin-top: -4%;
+  margin-top: -2.5%;
   margin-left: 25%;
   text-align: center;
 }
 
 .login-button {
   width: 25%;
-  margin: auto;
-  text-align: center;
   float: right;
+  text-align: center;
   margin-top: -8.1%;
 }

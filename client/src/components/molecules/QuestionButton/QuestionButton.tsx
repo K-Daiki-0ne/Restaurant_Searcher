@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import { HeaderQuestionIcon } from '../../atoms/index';
 import Modal from 'react-modal';
+import './QuestionButton.css';
+
+Modal.setAppElement('#root');
 
 export const QuestionButton: React.FC = () => {
 
@@ -15,8 +18,8 @@ export const QuestionButton: React.FC = () => {
   }
 
   return (
-    <div>
-      <button onClick={openModal}>
+    <div className='question'>
+      <button onClick={openModal} className='question-button'>
         <HeaderQuestionIcon />
       </button>
       <Modal

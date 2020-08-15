@@ -1,0 +1,15 @@
+.question {
+  justify-content: center;
+  text-align: center;
+  margin-top: 2.5%;
+  margin-left: 20%;
+}
+
+
+.question-button {
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  border: none;
+  cursor:pointer;
+  overflow: hidden;
+}
