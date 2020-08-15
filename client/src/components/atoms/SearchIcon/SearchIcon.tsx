@@ -1,7 +1,9 @@
 import React from 'react'
 
-export function DetailRestaurantAdressText() {
+export function SeaarchIcon() {
   return (
-    <p>DetailRestaurantAdressText</p>
+    <div>
+      <i className="fas fa-search"></i>
+    </div>
   )
 }
