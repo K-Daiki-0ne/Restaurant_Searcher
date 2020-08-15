@@ -1,7 +1,12 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 export function DetailRestaurantAdressText() {
   return (
-    <p>DetailRestaurantAdressText</p>
+    <div>
+      <Link to='/login'>
+        {/*  */}
+      </Link>
+    </div>
   )
 }
