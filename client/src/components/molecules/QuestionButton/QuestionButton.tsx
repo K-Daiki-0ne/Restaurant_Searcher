@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
+import Modal from 'react-modal';
 import { 
   HeaderQuestionIcon,
-  ModalCloseIcon 
+  ModalCloseIcon,
+  ModalDescriptionText 
 } from '../../atoms/index';
-import Modal from 'react-modal';
 import './QuestionButton.css';
 
 Modal.setAppElement('#root');
@@ -33,9 +34,7 @@ export const QuestionButton: React.FC = () => {
         <button onClick={closeModal} className='close'>
           <ModalCloseIcon />
         </button>
-        <p>
-          サンプル
-        </p>
+        <ModalDescriptionText />
       </Modal>
     </div>
   )
