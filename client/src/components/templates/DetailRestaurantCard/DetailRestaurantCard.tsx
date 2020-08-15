@@ -1,7 +1,19 @@
 import React from 'react'
 
-export function DetailRestaurantAdressText() {
+export const DetailRestrauntCard: React.FC = () => {
   return (
-    <p>DetailRestaurantAdressText</p>
+    <div className='restraunt-card'>
+      <div className='image-content'>
+
+      </div>
+      <div className='text-content'>
+        <div className='restraunt-name'>
+
+        </div>
+        <div className='restraunt-adress'>
+
+        </div>
+      </div>
+    </div>
   )
 }
