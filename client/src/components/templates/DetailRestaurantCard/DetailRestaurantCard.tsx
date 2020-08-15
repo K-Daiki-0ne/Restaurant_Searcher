@@ -1,19 +1,24 @@
-import React from 'react'
+import React from 'react';
+import './DetailRestaurantCard.css';
 
 export const DetailRestrauntCard: React.FC = () => {
   return (
-    <div className='restraunt-card'>
-      <div className='image-content'>
-
-      </div>
-      <div className='text-content'>
-        <div className='restraunt-name'>
-
-        </div>
-        <div className='restraunt-adress'>
-
-        </div>
-      </div>
-    </div>
+  <div className="grid">
+    <article className="restraunt-image">
+      <p>sample</p>
+    </article>
+    <article className="restraunt-content">
+      <section className='name'>
+        <p>
+          sample
+        </p>
+      </section>
+      <section className='adress'>
+        <p>
+          sample02
+        </p>
+      </section>
+    </article>
+  </div>
   )
 }
