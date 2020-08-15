@@ -1,0 +1,33 @@
+.description-text {
+  text-align: center;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+.app-guide {
+  font-family: 'Archivo Black', sans-serif;
+  color: #263238;
+  font-size: 70px;
+  font-weight: bold;
+  text-shadow: 10px 10px 10px #ECEFF1;
+}
+
+.app-explanation {
+  margin-top: -2.5%;
+  color: #263238;
+  font-weight: 800;
+  font-size: 30px;
+}
+
+.app-sub-explanation {
+  color: #263238;
+  font-size: 25px;
+  font-weight: 300;
+}
+
+.app-text {
+  margin-top: 7%;
+  color: #263238;
+  font-size: 18px;
+  line-height: 4px;
+}
