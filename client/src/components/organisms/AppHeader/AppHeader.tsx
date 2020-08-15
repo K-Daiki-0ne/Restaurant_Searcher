@@ -4,8 +4,8 @@ import { HomeButton } from '../../molecules/index';
 
 export function AppHeaer() {
   return (
-    <div className='header'>
+    <header className='header'>
       <HomeButton />
-    </div>
+    </header>
   )
 }
