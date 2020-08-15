@@ -1,7 +1,10 @@
-import React from 'react'
+import React from 'react';
+import { HeaderQuestionIcon } from '../../atoms/index';
 
-export function DetailRestaurantAdressText() {
+export function QuestionButton() {
   return (
-    <p>DetailRestaurantAdressText</p>
+    <div>
+      <HeaderQuestionIcon />
+    </div>
   )
 }
