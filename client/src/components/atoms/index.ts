@@ -4,3 +4,4 @@ export { HeaderTitleText } from './HeaderTitleText/HeaderTitleText';
 export { FooterApiText } from './FooterApiText/FooterApiText';
 export { FooterAuthorText } from './FooterAuthorText/FooterAuthorText';
 export { FooterImageUrlText } from './FooterImageUrlText/FooterImageUrlText';
+export { HeaderLoginText } from './HeaderLoginText/HeaderLoginText';
