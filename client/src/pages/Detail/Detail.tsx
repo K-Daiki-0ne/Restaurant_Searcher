@@ -1,5 +1,6 @@
 import React from 'react';
 import { AppHeaer } from '../../components/organisms/index';
+import { DetailRestrauntCard } from '../../components/templates/index';
 import './Detail.css';
 
 export function Detail() {
@@ -7,7 +8,7 @@ export function Detail() {
     <div className='detail'>
       <AppHeaer />
       <div className='detail-content'>
-        {/* DetailRestrauntCard */}
+        <DetailRestrauntCard />
       </div>
     </div>
   )
