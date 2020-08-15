@@ -5,3 +5,4 @@ export { FooterApiText } from './FooterApiText/FooterApiText';
 export { FooterAuthorText } from './FooterAuthorText/FooterAuthorText';
 export { FooterImageUrlText } from './FooterImageUrlText/FooterImageUrlText';
 export { HeaderLoginText } from './HeaderLoginText/HeaderLoginText';
+export { HeaderQuestionIcon } from './HeaderQuestionIcon/HeaderQuestionIcon';
