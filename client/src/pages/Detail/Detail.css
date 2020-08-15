@@ -1,0 +1,7 @@
+.detail {
+  height: 100%;
+}
+
+.detail-content {
+  display: flex;
+}
