@@ -1,8 +1,9 @@
-import React from 'react'
+import React from 'react';
+import './HeaderLoginText.css';
 
 export function HeaderLoginText() {
   return (
-    <div>
+    <div className='login-text'>
       <h2>Login</h2>
     </div>
   )

@@ -1,11 +1,19 @@
 import React from 'react'
 import './AppHeader.css';
-import { HomeButton } from '../../molecules/index';
+import { 
+  HomeButton,
+  LoginButton 
+} from '../../molecules/index';
 
 export function AppHeaer() {
   return (
     <header className='header'>
-      <HomeButton />
+      <div className='main-text'>
+        <HomeButton />
+      </div>
+      <nav className='login-button'>
+        <LoginButton />
+      </nav>
     </header>
   )
 }

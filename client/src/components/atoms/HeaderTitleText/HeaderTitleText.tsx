@@ -4,7 +4,7 @@ import './HeaderTitleText.css';
 export function HeaderTitleText() {
   return (
     <div className='header-title'>
-      <h3>RestrauntSearcher</h3>
+      <h1>RestrauntSearcher</h1>
     </div>
   )
 }

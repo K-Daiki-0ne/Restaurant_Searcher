@@ -1,0 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+.login-text {
+  font-family: 'Anton', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
