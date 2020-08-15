@@ -1,7 +1,15 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { SeaarchIcon } from '../../atoms/index';
 
-export function DetailRestaurantAdressText() {
+export function SearchButton() {
   return (
-    <p>DetailRestaurantAdressText</p>
+    <div>
+      <Link to={`/detail`}>
+        <button>
+          <SeaarchIcon />
+        </button>
+      </Link>
+    </div>
   )
 }
