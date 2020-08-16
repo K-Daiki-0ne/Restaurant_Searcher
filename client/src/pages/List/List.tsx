@@ -7,7 +7,7 @@ export function List() {
   return (
     <div className='list'>
       <AppHeaer />
-      <div className='content'>
+      <div className='list-content'>
         <ListRestaurantCard />
       </div>
     </div>
