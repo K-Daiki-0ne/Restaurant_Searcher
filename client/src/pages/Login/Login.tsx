@@ -1,7 +1,16 @@
 import React from 'react';
+import {
+  LoginDescriptionText,
+  LoginGuideText
+} from '../../components/atoms/index';
 
 export function Login() {
   return (
-    <h1>This page is Login</h1>
+    <div className='login'>
+      <div className='text'>
+        <LoginDescriptionText />
+        <LoginGuideText />
+      </div>
+    </div>
   )
 }
