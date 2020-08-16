@@ -9,3 +9,4 @@ export { HeaderQuestionIcon } from './HeaderQuestionIcon/HeaderQuestionIcon';
 export { ModalCloseIcon } from './ModalCloseIcon/ModalCloseIcon';
 export { ModalDescriptionText } from './ModalDescriptionText/ModalDescriptionText';
 export { SeaarchIcon } from './SearchIcon/SearchIcon';
+export { ListErrorMessageText } from './ListErrorMessageText/ListErrorMessageText';
