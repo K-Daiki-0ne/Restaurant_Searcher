@@ -1,7 +1,7 @@
-import React from 'react'
+import React from 'react';
 
-export function DetailRestaurantAdressText() {
+export const ListRestaurantTitle = () => {
   return (
-    <p>DetailRestaurantAdressText</p>
+    <p>お店の名前</p>
   )
 }
