@@ -12,3 +12,4 @@ export { SeaarchIcon } from './SearchIcon/SearchIcon';
 export { ListErrorMessageText } from './ListErrorMessageText/ListErrorMessageText';
 export { LoginDescriptionText } from './LoginDescriptionText/LoginDescriptionText';
 export { LoginGuideText } from './LoginGuideText/LoginGuideText';
+export { RegisterMainText } from './RegisterMainText/RegisterMainText';
