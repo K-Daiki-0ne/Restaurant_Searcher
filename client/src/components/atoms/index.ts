@@ -13,3 +13,6 @@ export { ListErrorMessageText } from './ListErrorMessageText/ListErrorMessageTex
 export { LoginDescriptionText } from './LoginDescriptionText/LoginDescriptionText';
 export { LoginGuideText } from './LoginGuideText/LoginGuideText';
 export { RegisterMainText } from './RegisterMainText/RegisterMainText';
+export { ListRestaurantAdressText } from './ListRestaurantAdressText/ListRestaurantAdressText';
+export { ListRestaurantNoImageText } from './ListRestaurantNoImageText/ListRestaurantNoImageText';
+export { ListRestaurantTitle } from './ListRestaurantTitle/ListRestaurantTitle';
