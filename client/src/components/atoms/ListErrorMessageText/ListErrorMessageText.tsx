@@ -1,7 +1,9 @@
-import React from 'react'
+import React from 'react';
 
-export function DetailRestaurantAdressText() {
+export function ListErrorMessageText() {
   return (
-    <p>DetailRestaurantAdressText</p>
+    <div>
+      <h1>近くに飲食店はございません。</h1>
+    </div>
   )
 }
