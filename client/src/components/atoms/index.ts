@@ -10,3 +10,5 @@ export { ModalCloseIcon } from './ModalCloseIcon/ModalCloseIcon';
 export { ModalDescriptionText } from './ModalDescriptionText/ModalDescriptionText';
 export { SeaarchIcon } from './SearchIcon/SearchIcon';
 export { ListErrorMessageText } from './ListErrorMessageText/ListErrorMessageText';
+export { LoginDescriptionText } from './LoginDescriptionText/LoginDescriptionText';
+export { LoginGuideText } from './LoginGuideText/LoginGuideText';
