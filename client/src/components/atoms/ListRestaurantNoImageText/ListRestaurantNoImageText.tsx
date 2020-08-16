@@ -1,7 +1,7 @@
-import React from 'react'
+import React from 'react';
 
-export function DetailRestaurantAdressText() {
+export const ListRestaurantNoImageText = () => {
   return (
-    <p>DetailRestaurantAdressText</p>
+    <p>No Image</p>
   )
 }
