@@ -1,7 +1,10 @@
-import React from 'react'
+import React from 'react';
+import './ErrorText.css';
 
-export function DetailRestaurantAdressText() {
+export function ErrorText() {
   return (
-    <p>DetailRestaurantAdressText</p>
+    <div className='error-text'>
+      <h1>データの取得に失敗しました</h1>
+    </div>
   )
 }
