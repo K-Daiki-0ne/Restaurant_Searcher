@@ -1,0 +1,13 @@
+.error {
+  height: 100%;
+}
+
+.error-content {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
