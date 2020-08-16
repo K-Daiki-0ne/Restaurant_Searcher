@@ -1,7 +1,9 @@
 import React from 'react'
 
-export function DetailRestaurantAdressText() {
+export const DetailRestaurantNoImageText = () => {
   return (
-    <p>DetailRestaurantAdressText</p>
+    <div>
+      <p>No Image</p>
+    </div>
   )
 }
