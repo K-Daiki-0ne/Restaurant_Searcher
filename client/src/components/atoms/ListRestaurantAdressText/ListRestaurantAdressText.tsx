@@ -1,7 +1,9 @@
 import React from 'react'
 
-export function DetailRestaurantAdressText() {
+export const ListRestaurantAdressText = () => {
   return (
-    <p>DetailRestaurantAdressText</p>
+    <div>
+      <p>お店の住所</p>
+    </div>
   )
 }
