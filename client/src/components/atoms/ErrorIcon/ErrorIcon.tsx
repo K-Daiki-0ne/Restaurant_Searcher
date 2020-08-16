@@ -1,7 +1,10 @@
-import React from 'react'
+import React from 'react';
+import './ErrorIcon.css';
 
-export function DetailRestaurantAdressText() {
+export function ErrorIcon() {
   return (
-    <p>DetailRestaurantAdressText</p>
+    <div className='icon'>
+      <i className="fas fa-exclamation-triangle"></i>
+    </div>
   )
 }
