@@ -16,3 +16,6 @@ export { RegisterMainText } from './RegisterMainText/RegisterMainText';
 export { ListRestaurantAdressText } from './ListRestaurantAdressText/ListRestaurantAdressText';
 export { ListRestaurantNoImageText } from './ListRestaurantNoImageText/ListRestaurantNoImageText';
 export { ListRestaurantTitle } from './ListRestaurantTitle/ListRestaurantTitle';
+export { DetailRestaurantAdressText } from './DetailRestaurantAdressText/DetailRestaurantAdressText';
+export { DetailRestaurantNoImageText } from './DetailRestaurantNoImageText/DetailRestaurantNoImageText';
+export { DetailRestaurantTitle } from './DetailRestaurantTitle/DetailRestaurantTitle';
