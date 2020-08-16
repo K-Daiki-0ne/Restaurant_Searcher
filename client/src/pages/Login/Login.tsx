@@ -1,9 +1,8 @@
 import React from 'react';
-import { AppHeaer } from '../../components/organisms/index';
-import {
-  LoginDescriptionText,
-  LoginGuideText
-} from '../../components/atoms/index';
+import { 
+  AppHeaer,
+  LoginContent 
+} from '../../components/organisms/index';
 import './Login.css';
 
 export function Login() {
@@ -11,8 +10,7 @@ export function Login() {
     <div className='login'>
       <AppHeaer />
       <div className='content'>
-        <LoginDescriptionText />
-        <LoginGuideText />
+        <LoginContent />
       </div>
     </div>
   )

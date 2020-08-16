@@ -3,6 +3,7 @@ import {
   LoginDescriptionText,
   LoginGuideText
 } from '../../atoms/index';
+import './LoginContent.css';
 
 export function LoginContent() {
   return (
