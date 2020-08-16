@@ -9,8 +9,8 @@ export function Detail() {
     <div className='detail'>
       <AppHeaer />
       <div className='detail-content'>
-        {/* <DetailRestrauntCard /> */}
-        <ListErrorMessageText />
+        <DetailRestrauntCard />
+        {/* <ListErrorMessageText /> */}
       </div>
     </div>
   )
