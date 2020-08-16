@@ -1,7 +1,11 @@
 import React from 'react'
 
-export function DetailRestaurantAdressText() {
+export function RegisterMainText() {
   return (
-    <p>DetailRestaurantAdressText</p>
+    <div>
+      <h3>
+        RestaurantSearcherに登録をします
+      </h3>
+    </div>
   )
 }
