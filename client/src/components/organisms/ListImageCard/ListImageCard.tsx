@@ -1,7 +1,12 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-export function DetailRestaurantAdressText() {
+export const ListImageCard = () => {
   return (
-    <p>DetailRestaurantAdressText</p>
+    <div>
+      <Link to='/detail'>
+        <p>お店の画像</p>
+      </Link>
+    </div>
   )
 }
