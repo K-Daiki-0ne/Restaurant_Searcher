@@ -1,4 +1,5 @@
 import React from 'react';
+import './RegisterPasswordInputForm.css';
 
 export function RegisterPasswordInputForm() {
   return (
