@@ -1,5 +1,6 @@
 import React from 'react';
 import { AppHeaer } from '../../components/organisms/index';
+import { RegisterUserForm } from '../../components/templates/index';
 import './Register.css';
 
 export function Register() {
@@ -7,7 +8,7 @@ export function Register() {
     <div className='register'> 
       <AppHeaer />
       <div className='register-content'>
-
+        <RegisterUserForm />
       </div>
     </div>
   )
