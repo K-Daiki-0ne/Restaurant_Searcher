@@ -5,7 +5,7 @@ export function RegisterButton() {
   return (
     <div>
       <button>
-        <RegisterButton />
+        <RegisterButtonText />
       </button>
     </div>
   )
