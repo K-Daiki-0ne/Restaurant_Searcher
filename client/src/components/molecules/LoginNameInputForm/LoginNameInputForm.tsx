@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import './LoginNameInputForm.css';
 
 export function LoginNameInputForm() {
   return (
