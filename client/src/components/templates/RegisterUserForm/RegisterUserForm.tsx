@@ -1,7 +1,20 @@
-import React from 'react'
+import React from 'react';
+import { RegisterMainText } from '../../atoms/index';
+import {
+  RegisterNameInputForm,
+  RegisterPasswordInputForm,
+  RegisterButton
+} from '../../molecules/index';
 
-export function DetailRestaurantAdressText() {
+export function RegisterUserForm() {
   return (
-    <p>DetailRestaurantAdressText</p>
+    <div>
+      <RegisterMainText />
+      <form>
+        <RegisterNameInputForm />
+        <RegisterPasswordInputForm />
+      </form>
+      <RegisterButton />
+    </div>
   )
 }
