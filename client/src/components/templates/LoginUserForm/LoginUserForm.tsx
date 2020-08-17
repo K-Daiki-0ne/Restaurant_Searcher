@@ -1,7 +1,17 @@
-import React from 'react'
+import React from 'react';
+import { 
+  LoginNameInputForm, 
+  LoginPasswordInputForm 
+} from '../../molecules/index';
+import './LoginUserForm.css';
 
-export function DetailRestaurantAdressText() {
+export function LoginUserForm() {
   return (
-    <p>DetailRestaurantAdressText</p>
+    <div>
+      <form className='login-form'>
+        <LoginNameInputForm />
+        <LoginPasswordInputForm />
+      </form>
+    </div>
   )
 }
