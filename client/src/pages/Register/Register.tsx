@@ -1,7 +1,14 @@
 import React from 'react';
+import { AppHeaer } from '../../components/organisms/index';
+import './Register.css';
 
 export function Register() {
   return (
-    <h1>This page is Register</h1>
+    <div className='register'> 
+      <AppHeaer />
+      <div className='register-content'>
+
+      </div>
+    </div>
   )
 }
