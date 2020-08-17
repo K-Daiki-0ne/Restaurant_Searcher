@@ -4,3 +4,6 @@ export { QuestionButton } from './QuestionButton/QuestionButton';
 export { SearchButton } from './SearchButton/SearchButton';
 export { LoginNameInputForm } from './LoginNameInputForm/LoginNameInputForm';
 export { LoginPasswordInputForm } from './LoginPasswordInputForm/LoginPasswordInputForm';
+export { RegisterButton } from './RegisterButton/RegisterButton';
+export { RegisterNameInputForm } from './RegisterNameInputForm/RegisterNameInputForm';
+export { RegisterPasswordInputForm } from './RegisterPasswordInputForm/RegisterPasswordInputForm'
