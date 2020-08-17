@@ -1,7 +1,12 @@
-import React from 'react'
+import React from 'react';
+import { RegisterButtonText } from '../../atoms/index';
 
-export function DetailRestaurantAdressText() {
+export function RegisterButton() {
   return (
-    <p>DetailRestaurantAdressText</p>
+    <div>
+      <button>
+        <RegisterButton />
+      </button>
+    </div>
   )
 }
