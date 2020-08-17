@@ -1,7 +1,15 @@
-import React from 'react'
+import React from 'react';
 
-export function DetailRestaurantAdressText() {
+export function RegisterPasswordInputForm() {
   return (
-    <p>DetailRestaurantAdressText</p>
+    <div>
+      <label className='register-pass-label'>Password</label>
+      <input 
+        type="password" 
+        className="register-password"  
+        placeholder="パスワードを入力してください"  
+        required
+      />
+    </div>
   )
 }
