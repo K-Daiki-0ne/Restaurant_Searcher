@@ -1,4 +1,5 @@
 import React from 'react';
+import { LoginButtonText } from '../../atoms/index';
 import { 
   LoginNameInputForm, 
   LoginPasswordInputForm 
@@ -14,6 +15,9 @@ export function LoginUserForm() {
         <LoginNameInputForm />
         <LoginPasswordInputForm />
       </form>
+      <button className='login-content-button'>
+        <LoginButtonText />
+      </button>
     </div>
   )
 }
