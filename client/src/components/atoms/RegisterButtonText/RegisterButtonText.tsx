@@ -1,7 +1,9 @@
 import React from 'react'
 
-export function DetailRestaurantAdressText() {
+export function RegisterButtonText() {
   return (
-    <p>DetailRestaurantAdressText</p>
+    <div>
+      <p>登録</p>
+    </div>
   )
 }
