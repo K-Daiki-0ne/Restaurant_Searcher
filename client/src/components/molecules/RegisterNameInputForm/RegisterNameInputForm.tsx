@@ -1,4 +1,5 @@
 import React from 'react';
+import './RegisterNameInputForm.css'
 
 export function RegisterNameInputForm() {
   return (
