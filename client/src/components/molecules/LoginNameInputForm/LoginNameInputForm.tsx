@@ -1,7 +1,15 @@
 import React from 'react'
 
-export function DetailRestaurantAdressText() {
+export function LoginNameInputForm() {
   return (
-    <p>DetailRestaurantAdressText</p>
+    <div>
+      <label className='name-label'>Username</label>
+      <input 
+        type="text" 
+        className="username"  
+        placeholder="お名前を入力してください"  
+        required
+      />
+    </div>
   )
 }
