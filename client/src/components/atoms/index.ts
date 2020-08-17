@@ -21,3 +21,4 @@ export { DetailRestaurantNoImageText } from './DetailRestaurantNoImageText/Detai
 export { DetailRestaurantTitle } from './DetailRestaurantTitle/DetailRestaurantTitle';
 export { ErrorIcon } from './ErrorIcon/ErrorIcon';
 export { ErrorText } from './ErrorText/ErrorText';
+export { LoginButtonText } from './LoginButtonText/LoginButtonText';
