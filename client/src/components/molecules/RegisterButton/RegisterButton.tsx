@@ -3,10 +3,8 @@ import { RegisterButtonText } from '../../atoms/index';
 
 export function RegisterButton() {
   return (
-    <div>
-      <button>
-        <RegisterButtonText />
-      </button>
-    </div>
+    <button>
+      <RegisterButtonText />
+    </button>
   )
 }
