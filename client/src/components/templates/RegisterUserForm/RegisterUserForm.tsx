@@ -5,12 +5,13 @@ import {
   RegisterPasswordInputForm,
   RegisterButton
 } from '../../molecules/index';
+import './RegisterUserForm.css'
 
 export function RegisterUserForm() {
   return (
-    <div>
+    <div className='register-page-content'>
       <RegisterMainText />
-      <form>
+      <form className='register-form'>
         <RegisterNameInputForm />
         <RegisterPasswordInputForm />
       </form>
