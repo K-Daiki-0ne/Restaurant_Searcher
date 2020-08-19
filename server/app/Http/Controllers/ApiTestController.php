@@ -9,6 +9,6 @@ class ApiTestController extends Controller
     public function testApi() {
         $testResponse = 'これはテストです';
 
-        return $testResponse;
+        return response() -> json($testResponse);
     }
 }
