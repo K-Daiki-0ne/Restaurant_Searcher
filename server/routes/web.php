@@ -18,4 +18,4 @@ Route::get('/', function () {
 });
 
 Route::get('/test', 'ApiTestController@testApi');
-Route::get('/sample/{test}', 'ApiTestController@testRequest');
+Route::get('/sample/{test}/{test2}', 'ApiTestController@testRequest');
