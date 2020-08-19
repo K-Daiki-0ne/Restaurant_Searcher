@@ -11,4 +11,9 @@ class ApiTestController extends Controller
 
         return response() -> json($testResponse);
     }
+
+    public function testRequest($test) {
+        $data = $test;
+        return $data;
+    }
 }
