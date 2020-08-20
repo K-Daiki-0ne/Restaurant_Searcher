@@ -13,10 +13,18 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::group(['prefix' => 'api/v1'], function () {
+    Route::get('{lat}/{lon}', 'RestaurantController@index')->name('restaurant.index');
+    Route::get('{id}', 'RestaurantController@detail')->name('restaurant.detail');
+    Route::get('adress/{adress}', 'RestaurantController@index')->name('restaurant.adress');
 });
 
-Route::get('/test', 'ApiTestController@testApi');
-Route::get('/sample/{test}/{test2}', 'ApiTestController@testRequest');
-Route::get('/api', 'ApiTestController@getApi');
+Route::group(['prefix' => 'login'], function () {
+    Route::get('user/{name}/pass/{password}', 'LoginController@index')->name('login.index');
+    Route::get('user/favorite', 'LoginController@favorite')->name('login.favorite');
+});
+
+Route::group(['prefix' => 'register'], function () {
+    Route::post('user/{name}/{password}', 'RegisterController@index')->name('register.index');
+    Route::post('user/restaurant/{id}', 'RegisterController@favorite')->name('register.favorite');
+});
