@@ -2,7 +2,12 @@
 namespace App\Services;
 class GetApiData
 {
-	public static function getApi($url) {
+	public static function getRestaurant($lat, $lon) {
+
+		$grnavi_url = 'https://api.gnavi.co.jp/RestSearchAPI/v3/';
+		$api_key = config('api.api_key');
+		$url = "{$grnavi_url}?keyid={$api_key}&latitude={$lat}&longitude={$lon}";
+
 		try {
 		  $ch = curl_init();
   
@@ -19,7 +24,6 @@ class GetApiData
 			$result = $ex;
 			return response() -> json($result);
 		}
-	  }
-  
+	}
 }
 ?>

@@ -18,6 +18,9 @@ class EventServiceProvider extends ServiceProvider
         Registered::class => [
             SendEmailVerificationNotification::class,
         ],
+        'illuminate.query' => [ // 追加
+            'App\Http\Controllers\RestaurantController',
+        ],
     ];
 
     /**
