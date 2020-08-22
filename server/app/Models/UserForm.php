@@ -8,7 +8,7 @@ class UserForm extends Model
 {
     protected $fillable = ['name', 'password'];
 
-    public function restaurant(){
+    public function favoriteRestaurant(){
         return $this->hasMany('App\UserFavoriteRestaurant');
     }
 }
