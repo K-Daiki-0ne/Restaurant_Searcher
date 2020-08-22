@@ -18,7 +18,7 @@ class ApiRequest
 			$result = $ex;
 			return $result;
 		}
-  }
+	}
 }
 
 ?>
