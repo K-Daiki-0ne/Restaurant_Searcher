@@ -17,6 +17,7 @@ class CreateUserFavoriteRestaurantsTable extends Migration
             $table->increments('id');
             $table->integer('restaurant_id')->unsigned();
             $table->foreign('restaurant_id')->reference('id')->on('user_forms');
+            $table->string('favorite_restaurant');
             $table->timestamps();
         });
     }
