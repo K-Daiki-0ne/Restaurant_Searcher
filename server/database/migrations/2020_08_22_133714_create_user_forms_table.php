@@ -14,9 +14,9 @@ class CreateUserFormsTable extends Migration
     public function up()
     {
         Schema::create('user_forms', function (Blueprint $table) {
-            $table->bigIncrements('id');
-            $table->string('name');
-            $table->string('password');
+            $table->increments('id');
+            $table->string('name', 25);
+            $table->string('password', 255);
             $table->timestamps();
         });
     }
