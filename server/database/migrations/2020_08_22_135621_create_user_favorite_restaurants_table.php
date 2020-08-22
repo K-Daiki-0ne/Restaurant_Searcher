@@ -14,7 +14,9 @@ class CreateUserFavoriteRestaurantsTable extends Migration
     public function up()
     {
         Schema::create('user_favorite_restaurants', function (Blueprint $table) {
-            $table->id();
+            $table->increments('id');
+            $table->integer('restaurant_id')->unsigned();
+            $table->foreign('restaurant_id')->reference('id')->on('user_forms');
             $table->timestamps();
         });
     }
