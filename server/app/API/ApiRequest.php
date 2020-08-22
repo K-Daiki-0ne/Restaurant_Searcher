@@ -1,4 +1,5 @@
 <?php
+namespace App\API;
 class ApiRequest
 {
 	public static function request($url) {
