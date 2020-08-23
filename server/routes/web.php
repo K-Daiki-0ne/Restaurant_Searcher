@@ -20,7 +20,7 @@ Route::group(['prefix' => 'api/v1'], function () {
 
 Route::group(['prefix' => 'login'], function () {
     Route::get('user/{name}/pass/{password}', 'LoginController@index')->name('login.index');
-    Route::get('user/favorite', 'LoginController@favorite')->name('login.favorite');
+    Route::get('user/favorite/{id}', 'LoginController@favorite')->name('login.favorite');
 });
 
 Route::group(['prefix' => 'register'], function () {
