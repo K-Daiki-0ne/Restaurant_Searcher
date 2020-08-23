@@ -25,6 +25,5 @@ Route::group(['prefix' => 'login'], function () {
 
 Route::group(['prefix' => 'register'], function () {
     Route::post('user/{user_name}/{user_password}', 'RegisterController@index')->name('register.index');
-
-    Route::post('user/restaurant/{id}', 'RegisterController@favorite')->name('register.favorite');
+    Route::post('favorite/user/{user_id}/{rest_id}', 'RegisterController@favorite')->name('register.favorite');
 });
