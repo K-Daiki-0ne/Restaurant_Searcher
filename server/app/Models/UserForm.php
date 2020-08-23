@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class UserForm extends Model
 {
-    // protected $fillable = ['name', 'password'];
+    protected $fillable = ['name', 'password'];
 
     public function favoriteRestaurant(){
         return $this->hasMany('App\UserFavoriteRestaurant');

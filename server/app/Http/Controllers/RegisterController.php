@@ -3,28 +3,26 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+
 use App\Models\UserForm;
 
 class RegisterController extends Controller
 {
-    public function index($name, $password) {
-        // $request = new UserForm();
-        // try {
-        //     $request->$name = $name;
-        //     $request->password = $password;
+    public function index($user_name, $user_password) {
 
-        //     $request->save();
+        $user = new UserForm();
+
+        try {
+            $user->name = $user_name;
+            $user->password = $user_password;
+
+            $user->save();
         
-        //     $success = 'ユーザーの作成に成功しました';
-        //     var_dump($success);
-        //     return response() -> json($success);
-        // } catch (Exception $err) {
-        //     $error = $err;
-        //     var_dump($error);
-        //     return response() -> json($error);
-        // }
-        header("Access-Control-Allow-Origin: *");  //CORS
-        header("Access-Control-Allow-Headers: Origin, X-Requested-With");
-        var_dump($name);
+            $success = 'ユーザーの作成に成功しました';
+            return response() -> json($success);
+        } catch (Exception $err) {
+            $error = 'ユーザーの作成に失敗しました。';
+            return response() -> json($error);
+        }
     }
 }
