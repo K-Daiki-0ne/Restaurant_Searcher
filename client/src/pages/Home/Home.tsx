@@ -1,7 +1,7 @@
 import React from 'react';
 import './Home.css';
 import { HomeComponent } from '../../components/templates/index';
-import { AppHeaer } from '../../components/organisms/AppHeader/AppHeader'
+import { AppHeaer } from '../../components/organisms/AppHeader/AppHeader';
 
 export function Home() {
   return (

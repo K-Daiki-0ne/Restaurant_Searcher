@@ -1,21 +1,20 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { useSetRecoilState } from 'recoil';
+import { userCurrentLocation } from '../../../store/atoms/location';
 import { SeaarchIcon } from '../../atoms/index';
 import { getLocation } from '../../../util/location';
 import './SearchButton.css'
 
-type CurrentPosition = {
-  lat: string;
-  lon: string;
-};
 
 export function SearchButton() {
-  const [location, setLocation] = useState<CurrentPosition>();
+  const setUserCurrentLocation = useSetRecoilState(userCurrentLocation);
 
   useEffect(() => {
     getLocation()
-      .then((data: object | any) => setLocation(data));
+      .then((data: object | any) => setUserCurrentLocation(data));
   }, []);
+
 
 
   return (
