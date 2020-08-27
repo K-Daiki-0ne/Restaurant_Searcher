@@ -10,7 +10,7 @@ class RestaurantController extends Controller
 {
     public function index($lat, $lon) {
         $result = GetApiData::getRestaurant($lat, $lon);
-        $data = $result['rest'];
+        $data = $result;
         return response() -> json($data);
     }
 
