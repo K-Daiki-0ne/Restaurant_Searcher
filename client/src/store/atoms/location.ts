@@ -1,11 +1,11 @@
 import { atom } from 'recoil';
 
-type UserLocation =  {
-  lat: string;
-  lon: string;
-}
+// type UserLocation =  {
+//   lat: string;
+//   lon: string;
+// }
 
-const currentPosition: UserLocation[]= [];
+const currentPosition: object= {};
 
 export const userCurrentLocation = atom({
   key: 'userCurrentLocation',
