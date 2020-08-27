@@ -13,7 +13,7 @@ export function Home() {
   useEffect(() => {
     getLocation()
       .then((data: object | any) => setUserCurrentLocation(data));
-  }, []);
+  }, [setUserCurrentLocation]);
   return (
     <div className='home'>
       <AppHeaer />
