@@ -13,16 +13,10 @@ export function Home() {
   const [error, setError] = useState(false);
   const [, setUserCurrentLocation] = useRecoilState(userCurrentLocation);
 
-  // useEffect(() => {
-  //   navigator.geolocation.getCurrentPosition(
-  //     pos => setLocation({ lat: pos.coords.latitude, lon: pos.coords.longitude }),
-  //     err => setError(true)
-  //   );
-  // }, []);
-
   useEffect(() => {
     setTimeout(() => {
       // 三秒後に画面を表示する。
+      setLoading(false);
       getLocation()
         .then((data: any) => setUserCurrentLocation(data))
         .catch((err: any) => setError(true))

@@ -2,7 +2,7 @@ import { atom } from 'recoil';
 
 const currentRestaurants: any= [];
 
-export const userCurrentLocation = atom({
+export const userCurrentRestaurants = atom({
   key: 'userCurrentLocation',
   default: currentRestaurants
 });
