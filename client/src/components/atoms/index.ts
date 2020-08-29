@@ -23,3 +23,4 @@ export { ErrorIcon } from './ErrorIcon/ErrorIcon';
 export { ErrorText } from './ErrorText/ErrorText';
 export { LoginButtonText } from './LoginButtonText/LoginButtonText';
 export { RegisterButtonText } from './RegisterButtonText/RegisterButtonText';
+export { AppCircular } from './AppCircular/AppCircular';
