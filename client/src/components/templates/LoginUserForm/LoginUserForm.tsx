@@ -11,6 +11,7 @@ import {
   loginUserName,
   loginUserPassword
 } from '../../../store/atoms/login';
+import { loginRequest } from '../../../api/loginRequest';
 import './LoginUserForm.css';
 
 const { useState } = React;
@@ -25,7 +26,7 @@ export function LoginUserForm() {
   const password = useRecoilValue(loginUserPassword);
 
   const loginApp = () => {
-    
+    loginRequest(name, password);
   }
 
   return (
@@ -36,7 +37,7 @@ export function LoginUserForm() {
         <LoginPasswordInputForm />
       </form>
       <Link to='/'>
-        <button className='login-content-button' onClick={show}>
+        <button className='login-content-button' onClick={loginApp}>
           <LoginButtonText />
         </button>
       </Link>
