@@ -2,9 +2,10 @@ import React, { useEffect, useState } from 'react';
 import { useRecoilState } from 'recoil';
 import { userCurrentLocation } from '../../store/atoms/location';
 import { getLocation } from '../../util/location';
-import './Home.css';
 import { HomeComponent } from '../../components/templates/index';
 import { AppHeaer } from '../../components/organisms/AppHeader/AppHeader';
+import { AppCircular } from '../../components/atoms/AppCircular/AppCircular';
+import './Home.css';
 
 
 export function Home() {
@@ -20,15 +21,22 @@ export function Home() {
       getLocation()
         .then((data: any) => setUserCurrentLocation(data))
         .catch((err: any) => setError(true))
-      setLoading(true)
+      // setLoading(true)
     }, 3000);
   }, [location]);
 
-  return (
+  return loading ?(
     <div className='home'>
       <AppHeaer />
       <div className='image'>
         <HomeComponent />
+      </div>
+    </div>
+  ) : (
+    <div className='home'>
+        <AppHeaer />
+      <div className='spin'>
+        <AppCircular />
       </div>
     </div>
   )
