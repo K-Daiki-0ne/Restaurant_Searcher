@@ -4,9 +4,9 @@ import { useRecoilState } from 'recoil';
 import './RegisterNameInputForm.css'
 
 export function RegisterNameInputForm() {
-  const [ loginName, setLoginName ] = useRecoilState(registerUserName);
+  const [ registerName, setRegisterName ] = useRecoilState(registerUserName);
   const onChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setLoginName(event.target.value);
+    setRegisterName(event.target.value);
   }
 
   return (
@@ -16,7 +16,7 @@ export function RegisterNameInputForm() {
         type="text" 
         className="register-username"  
         placeholder="お名前を入力してください"  
-        value={loginName} 
+        value={registerName} 
         onChange={onChange}
         required
       />
