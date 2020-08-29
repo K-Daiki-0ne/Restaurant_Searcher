@@ -6,11 +6,15 @@ import {
   LoginPasswordInputForm 
 } from '../../molecules/index';
 import { LoginContent } from '../../organisms/index';
-import { useRecoilValue } from 'recoil';
+import { 
+  useRecoilValue,
+  useSetRecoilState
+} from 'recoil';
 import {
   loginUserName,
   loginUserPassword
 } from '../../../store/atoms/login';
+import { loginUser } from '../../../store/atoms/loginUser';
 import { loginRequest } from '../../../api/loginRequest';
 import './LoginUserForm.css';
 
@@ -24,9 +28,11 @@ export function LoginUserForm() {
 
   const name = useRecoilValue(loginUserName);
   const password = useRecoilValue(loginUserPassword);
+  const userInformation = useSetRecoilState(loginUser);
 
-  const loginApp = () => {
-    loginRequest(name, password);
+  const loginApp = async () => {
+    const loginUserInformation = await loginRequest(name, password);
+    userInformation(loginUserInformation)
   }
 
   return (
