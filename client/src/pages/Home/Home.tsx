@@ -21,7 +21,7 @@ export function Home() {
       getLocation()
         .then((data: any) => setUserCurrentLocation(data))
         .catch((err: any) => setError(true))
-      // setLoading(true)
+      setLoading(true)
     }, 3000);
   }, [location]);
 
