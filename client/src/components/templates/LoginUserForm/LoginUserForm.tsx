@@ -31,8 +31,8 @@ export function LoginUserForm() {
   const userInformation = useSetRecoilState(loginUser);
 
   const loginApp = async () => {
-    const loginUserInformation = await loginRequest(name, password);
-    userInformation(loginUserInformation)
+    loginRequest(name, password)
+      .then((data: any) => userInformation(data));
   }
 
   return (
