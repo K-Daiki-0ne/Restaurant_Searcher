@@ -1,10 +1,10 @@
 import React from 'react';
 import { useRecoilState } from 'recoil';
-import { loginUserName } from '../../../store/atoms/login';
+import { loginUserPassword } from '../../../store/atoms/login';
 import './LoginPasswordInputForm.css';
 
 export function LoginPasswordInputForm() {
-  const [loginPassword, setLoginPassword] = useRecoilState(loginUserName);
+  const [loginPassword, setLoginPassword] = useRecoilState(loginUserPassword);
 
   const onChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setLoginPassword(event.target.value);
