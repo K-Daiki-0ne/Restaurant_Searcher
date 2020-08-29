@@ -18,7 +18,7 @@ import { loginUser } from '../../../store/atoms/loginUser';
 import { loginRequest } from '../../../api/loginRequest';
 import './LoginUserForm.css';
 
-const { useState } = React;
+// const { useState } = React;
 
 export function LoginUserForm() {
   // const [loginNameValid, setLoginNameValid] = useState<boolean>()
@@ -31,6 +31,8 @@ export function LoginUserForm() {
   const userInformation = useSetRecoilState(loginUser);
 
   const loginApp = async () => {
+    console.log(name);
+    console.log(password)
     loginRequest(name, password)
       .then((data: any) => userInformation(data));
   }

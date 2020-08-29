@@ -1,10 +1,15 @@
-import React from 'react';
+import React, { useEffect }  from 'react';
 import { useRecoilState } from 'recoil';
 import { registerUserPassword } from '../../../store/atoms/register'
 import './RegisterPasswordInputForm.css';
 
 export function RegisterPasswordInputForm() {
   const [registerName, setRegisterPassword] = useRecoilState(registerUserPassword);
+
+  useEffect(() => {
+    setRegisterPassword('');
+  }, [])
+
   const onChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setRegisterPassword(event.target.value);
   }

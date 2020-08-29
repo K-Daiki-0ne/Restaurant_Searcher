@@ -10,8 +10,9 @@ import './Home.css';
 
 export function Home() {
   const [location, setLocation] = useState({});
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState(false);
+  const [loading, setLoading] = useState<boolean>(false);
+  const [error, setError] = useState<boolean>(false);
+
   const [, setUserCurrentLocation] = useRecoilState(userCurrentLocation);
 
   useEffect(() => {
@@ -24,6 +25,8 @@ export function Home() {
       setLoading(true)
     }, 3000);
   }, [location]);
+
+
 
   return loading ?(
     <div className='home'>
