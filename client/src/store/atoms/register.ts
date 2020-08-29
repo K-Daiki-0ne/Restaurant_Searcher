@@ -1,8 +1,8 @@
 import { atom } from 'recoil';
 
-const registerUser: any = {}
+const registerName: string = '';
 
-export const userCurrentLocation = atom({
+export const registerUserName = atom({
   key: 'RegisterUser',
-  default: registerUser
+  default: registerName
 });
