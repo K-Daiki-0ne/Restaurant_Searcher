@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { LoginButtonText } from '../../atoms/index';
 import { 
   LoginNameInputForm, 
@@ -15,9 +16,11 @@ export function LoginUserForm() {
         <LoginNameInputForm />
         <LoginPasswordInputForm />
       </form>
-      <button className='login-content-button'>
-        <LoginButtonText />
-      </button>
+      <Link to='/'>
+        <button className='login-content-button'>
+          <LoginButtonText />
+        </button>
+      </Link>
     </div>
   )
 }
