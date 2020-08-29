@@ -7,7 +7,7 @@ export function LoginPasswordInputForm() {
   const [loginPassword, setLoginPassword] = useRecoilState(loginUserName);
 
   const onChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setLoginPassword(loginPassword);
+    setLoginPassword(event.target.value);
   }
 
   return (
