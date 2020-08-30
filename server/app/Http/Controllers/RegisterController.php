@@ -22,7 +22,8 @@ class RegisterController extends Controller
             $user->save();
         
             $success = 'ユーザーの作成に成功しました';
-            return response() -> json($success);
+            return response() 
+                -> json($user);
         } catch (Exception $err) {
             $error = 'ユーザーの作成に失敗しました。';
             return response() -> json($error);
