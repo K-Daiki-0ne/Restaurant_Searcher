@@ -7,6 +7,6 @@ export const registerUser = async (name: string, password: string) => {
     const result = await axios.post(reqUrl);
     return result
   } catch (err) {
-    
+    return 'ユーザーの登録に失敗しました'
   }
 }
