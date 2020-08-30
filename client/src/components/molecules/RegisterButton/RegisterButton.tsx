@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { RegisterButtonText } from '../../atoms/index';
 import './RegisterButton.css';
 import { useRecoilValue, useSetRecoilState } from 'recoil';
@@ -21,8 +22,10 @@ export function RegisterButton() {
   }
 
   return (
-    <button className='register-button' onClick={userStatus}>
-      <RegisterButtonText />
-    </button>
+    <Link to='/'>
+      <button className='register-button' onClick={userStatus}>
+        <RegisterButtonText />
+      </button>
+    </Link>
   )
 }

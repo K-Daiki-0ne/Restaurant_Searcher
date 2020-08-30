@@ -15,7 +15,7 @@ export function RegisterUserForm() {
         <RegisterNameInputForm />
         <RegisterPasswordInputForm />
       </form>
-      <RegisterButton />
+        <RegisterButton />
     </div>
   )
 }
