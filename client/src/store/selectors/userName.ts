@@ -1,22 +1,20 @@
-export const name = 'name'
+import { selector } from 'recoil';
+import { loginUser } from '../atoms/loginUser';
+import { registerUser } from '../atoms/registerUser';
 
-// import { selector } from 'recoil';
-// import { loginUser } from '../atoms/loginUser';
-// import { registerUser } from '../atoms/registerUser';
-// import { registerUserName } from '../atoms/register';
-
-// type ServiceRegisteredUserName = {
-//   name: string;
-//   password: string;
-// }
-
-// export const serviceRegistedUserName = selector({
-//   key: 'registerdUserName',
-//   get: ({ get }) => {
-//     const loginedUserName: ServiceRegisteredUserName[] = get(loginUser);
-//     const registeredUserName: ServiceRegisteredUserName[] = get(registerUser);
-
-//     // loginUserとregisterUserにユーザー名が格納されているかを判定する
-//     const loginUserExists = 
-//   }
-// })
+export const serviceRegistedUserName = selector({
+  key: 'serviceRegistedUserName',
+  get: ({ get }) => {
+    const loginedUserName: any = get(loginUser);
+    const registedUserName: any = get(registerUser);
+    if(!loginedUserName.name && !registedUserName.name) {
+      return 'login'
+    } else if(loginedUserName.name && !registedUserName.name) {
+      return loginedUserName.name;
+    } else if(!loginedUserName.name && registedUserName.name) {
+      return registedUserName.name;
+    } else {
+      return 'ユーザー名の取得に失敗しました。'
+    }
+  }
+})
