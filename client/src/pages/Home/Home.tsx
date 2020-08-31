@@ -30,7 +30,7 @@ export function Home() {
 
   useEffect(() => {
     console.log(userInformation)
-  }, [])
+  }, [userInformation])
 
 
 

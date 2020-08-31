@@ -6,6 +6,7 @@ export const loginRequest = async (name: string, password: string) => {
     const reqUrl = `${baseUrl}/login/user/${name}/pass/${password}`;
     const result = await axios.get(reqUrl);
     console.log('Connection ...OK')
+    // console.log(result.data)
     return result.data;
   } catch (err) {
     console.log('Connection ...NO')
