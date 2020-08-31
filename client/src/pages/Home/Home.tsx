@@ -28,6 +28,10 @@ export function Home() {
     }, 3000);
   }, [location]);
 
+  useEffect(() => {
+    console.log(userInformation)
+  }, [])
+
 
 
   return loading ?(
