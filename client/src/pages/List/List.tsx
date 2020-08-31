@@ -18,7 +18,7 @@ export function List() {
     apiResult()
       .then((result: any) => setResturants(result))
       .then(() => setLoading(true))
-  }, []);
+  }, [setLoading, setResturants]);
   
   const apiResult = async () => {
     const result = await apiRequest(location.lat, location.lon);

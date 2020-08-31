@@ -1,6 +1,11 @@
 import { atom } from 'recoil';
 
-const registerUserInformation = {};
+type RegisterUserInformation = {
+  name: string;
+  password: string;
+}
+
+const registerUserInformation: RegisterUserInformation[] = [];
 
 export const registerUser = atom({
   key: 'registerUser',

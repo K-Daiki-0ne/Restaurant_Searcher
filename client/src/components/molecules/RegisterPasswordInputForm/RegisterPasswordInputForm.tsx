@@ -8,7 +8,7 @@ export function RegisterPasswordInputForm() {
 
   useEffect(() => {
     setRegisterPassword('');
-  }, [])
+  }, [setRegisterPassword])
 
   const onChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setRegisterPassword(event.target.value);

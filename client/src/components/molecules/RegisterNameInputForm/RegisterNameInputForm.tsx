@@ -8,7 +8,7 @@ export function RegisterNameInputForm() {
 
   useEffect(() => {
     setRegisterName('');
-  }, [])
+  }, [setRegisterName])
 
   const onChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setRegisterName(event.target.value);

@@ -19,14 +19,13 @@ import { loginRequest } from '../../../api/loginRequest';
 import './LoginUserForm.css';
 
 export function LoginUserForm() {
-
   const name = useRecoilValue(loginUserName);
   const password = useRecoilValue(loginUserPassword);
   const userInformation = useSetRecoilState(loginUser);
 
-  const loginApp = async () => {
+  const loginApp = () => {
     loginRequest(name, password)
-      .then((data: any) => userInformation(data));
+      .then((data: any) => userInformation(data))
   }
 
   return (

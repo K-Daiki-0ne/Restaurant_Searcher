@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import { useRecoilState } from 'recoil';
+import { useRecoilState, useRecoilValue } from 'recoil';
 import { userCurrentLocation } from '../../store/atoms/location';
+import { loginUser } from '../../store/atoms/loginUser';
 import { getLocation } from '../../util/location';
 import { HomeComponent } from '../../components/templates/index';
 import { AppHeaer } from '../../components/organisms/AppHeader/AppHeader';
@@ -14,6 +15,7 @@ export function Home() {
   const [error, setError] = useState<boolean>(false);
 
   const [, setUserCurrentLocation] = useRecoilState(userCurrentLocation);
+  const userInformation = useRecoilValue(loginUser);
 
   useEffect(() => {
     setTimeout(() => {

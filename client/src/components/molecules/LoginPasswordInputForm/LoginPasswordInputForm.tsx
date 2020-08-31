@@ -8,7 +8,7 @@ export function LoginPasswordInputForm() {
 
   useEffect(() => {
     setLoginPassword('');
-  }, [])
+  }, [setLoginPassword])
 
   const onChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setLoginPassword(event.target.value);

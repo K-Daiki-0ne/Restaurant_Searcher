@@ -9,7 +9,7 @@ export function LoginNameInputForm() {
 
   useEffect(() => {
     setLoginName('');
-  }, [])
+  }, [setLoginName])
 
   const onChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setLoginName(event.target.value)
