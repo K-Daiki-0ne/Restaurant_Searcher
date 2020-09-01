@@ -1,3 +1,9 @@
 .question-icon {
   font-size: 50px;
 }
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .question-icon {
+    font-size: 25px;
+  }
+}

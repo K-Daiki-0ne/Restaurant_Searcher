@@ -2,11 +2,11 @@
   justify-content: center;
   text-align: center;
   margin-top: 2.5%;
-  margin-left: 20%;
+  margin-left: -25%;
 }
 
 
-.question-button {
+.header-question-button {
   background-color: Transparent;
   background-repeat:no-repeat;
   border: none;
@@ -22,3 +22,16 @@
   overflow: hidden;
   float: right;
 }
+
+/* @media (min-width: 320px) and (max-width: 480px) {
+  .question {
+    margin-top: 5%;
+    width: 5%;
+  }
+
+  .question-button {
+    width: 50%;
+    margin-right: 80%;
+
+  }
+} */

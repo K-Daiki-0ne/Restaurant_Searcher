@@ -3,3 +3,11 @@
   color: #FAFAFA;
   text-shadow: 2px 3px 4px #212121;
 }
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .search-icon {
+    font-size: 50px;
+    text-align: center;
+    margin-left: -50%;
+  }
+}

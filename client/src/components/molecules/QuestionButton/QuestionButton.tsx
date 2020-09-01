@@ -23,7 +23,7 @@ export const QuestionButton: React.FC = () => {
 
   return (
     <div className='question'>
-      <button onClick={openModal} className='question-button'>
+      <button onClick={openModal} className='header-question-button '>
         <HeaderQuestionIcon />
       </button>
       <Modal

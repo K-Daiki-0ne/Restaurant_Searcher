@@ -11,3 +11,9 @@
   text-decoration: none;
   color: #212121;
 }
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .author-text {
+    font-size: 5px;
+  }
+}
