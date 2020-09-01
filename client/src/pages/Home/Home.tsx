@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useRecoilState, useRecoilValue } from 'recoil';
 import { userCurrentLocation } from '../../store/atoms/location';
-import { loginUser } from '../../store/atoms/loginUser';
 import { getLocation } from '../../util/location';
 import { HomeComponent } from '../../components/templates/index';
 import { AppHeaer } from '../../components/organisms/AppHeader/AppHeader';
@@ -15,7 +14,6 @@ export function Home() {
   const [error, setError] = useState<boolean>(false);
 
   const [, setUserCurrentLocation] = useRecoilState(userCurrentLocation);
-  const userInformation = useRecoilValue(loginUser);
 
   useEffect(() => {
     setTimeout(() => {
@@ -27,12 +25,6 @@ export function Home() {
       setLoading(true)
     }, 3000);
   }, [location]);
-
-  useEffect(() => {
-    console.log(userInformation.name)
-  }, [userInformation])
-
-
 
   return loading ?(
     <div className='home'>
