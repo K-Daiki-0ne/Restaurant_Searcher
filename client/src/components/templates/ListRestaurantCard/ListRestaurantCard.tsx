@@ -12,10 +12,11 @@ type ListProps = {
 }
 
 export const ListRestaurantCard: React.FC<ListProps> = ({ restaurant }) => {
-  
   return (
     <div className="card-section">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQacc2oDFiw1I0NnyJPMld4e_AgK_npkQnzpw&usqp=CAU" className="card-img-top" alt="..." />
+      <div className='card-img-top'>
+        <ListImageCard images={restaurant.image_url} />
+      </div>
       <div className="card-body">
         <div className="card-title">
           <ListTitle name={restaurant.name} />
