@@ -38,8 +38,8 @@ export function List() {
         {
           restaurants.map((restaurant: any, index: number) => {
             return (
-              <li className='li-content'>
-                <ListRestaurantCard restaurant={restaurant} />
+              <li className='li-content' key={index}>
+                <ListRestaurantCard restaurant={restaurant}  />
               </li>
             )
           })

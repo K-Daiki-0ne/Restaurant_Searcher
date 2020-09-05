@@ -1,11 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-export const ListTitle: React.FC = () => {
+type RestaurantNameProps = {
+  name: string;
+}
+
+export const ListTitle: React.FC<RestaurantNameProps> = ({ name }): JSX.Element => {
   return (
     <div>
       <Link to='/detail'>
-        <p>お店の名前</p>
+        <h4>{ name }</h4>
       </Link>
     </div>
   )
