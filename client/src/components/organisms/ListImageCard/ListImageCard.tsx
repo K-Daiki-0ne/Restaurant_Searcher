@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-// import NoImage from '../../../../public/img/noimage.png';
+import './ListImageCard.css';
 
 type ImageType = {
   qrcode: string;
@@ -27,14 +27,13 @@ export const ListImageCard: React.FC<RestaurantImageProps> = ({ images }) => {
   return isImages ? (
     <div>
       <Link to='/detail'>
-        <img src={images.shop_image1} />
-        {/* <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQacc2oDFiw1I0NnyJPMld4e_AgK_npkQnzpw&usqp=CAU" className="card-img-top" alt="..." /> */}
+        <img src={images.shop_image1} className='restaurant-image' />
       </Link>
     </div>
   ) : (
     <div>
       <Link to='/detail'>
-        <img src={require('./noimage.png')}/>
+        <img src={require('./noimage.png')} className='restaurant-image' />
       </Link>
     </div>
   )
