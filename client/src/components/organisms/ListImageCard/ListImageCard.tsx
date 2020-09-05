@@ -15,7 +15,6 @@ type RestaurantImageProps = {
 
 export const ListImageCard: React.FC<RestaurantImageProps> = ({ images }) => {
   const [isImages, setIsImages] = useState<boolean>(true);
-  console.log(images.qrcode)
 
   useEffect(() => {
     if(images.shop_image1) {
@@ -23,13 +22,13 @@ export const ListImageCard: React.FC<RestaurantImageProps> = ({ images }) => {
     } else {
       setIsImages(false);
     }
-  }, [])
+  }, [images.shop_image1])
 
   return isImages ? (
     <div>
       <Link to='/detail'>
-        {/* <img src={images.shop_image1} /> */}
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQacc2oDFiw1I0NnyJPMld4e_AgK_npkQnzpw&usqp=CAU" className="card-img-top" alt="..." />
+        <img src={images.shop_image1} />
+        {/* <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQacc2oDFiw1I0NnyJPMld4e_AgK_npkQnzpw&usqp=CAU" className="card-img-top" alt="..." /> */}
       </Link>
     </div>
   ) : (
