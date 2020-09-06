@@ -1,6 +1,6 @@
 import { atom } from 'recoil';
 
-const currentRestaurants: any= [];
+const currentRestaurants: any[] = [];
 
 export const userCurrentRestaurants = atom({
   key: 'userCurrentRestaurants',
