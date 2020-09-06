@@ -26,15 +26,11 @@ export const ListImageCard: React.FC<RestaurantImageProps> = ({ images }) => {
 
   return isImages ? (
     <div>
-      <Link to='/detail'>
-        <img src={images.shop_image1} className='restaurant-image' />
-      </Link>
+      <img src={images.shop_image1} className='restaurant-image' />
     </div>
   ) : (
     <div>
-      <Link to='/detail'>
-        <img src={require('./noimage.png')} className='restaurant-image' />
-      </Link>
+      <img src={require('./noimage.png')} className='restaurant-image' />
     </div>
   )
 }

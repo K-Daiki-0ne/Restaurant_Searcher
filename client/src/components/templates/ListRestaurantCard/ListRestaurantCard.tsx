@@ -14,6 +14,7 @@ type ListProps = {
 
 export const ListRestaurantCard: React.FC<ListProps> = ({ restaurant }) => {
   return (
+    <div>
     <Link to={`/detail?id=${restaurant.id}`}>
       <div className="card-section">
         <div className='card-img-top'>
@@ -34,5 +35,6 @@ export const ListRestaurantCard: React.FC<ListProps> = ({ restaurant }) => {
         </div>
       </div>
     </Link>
+    </div>
     )
 }

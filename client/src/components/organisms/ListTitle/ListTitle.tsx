@@ -8,9 +8,7 @@ type RestaurantNameProps = {
 export const ListTitle: React.FC<RestaurantNameProps> = ({ name }): JSX.Element => {
   return (
     <div>
-      <Link to='/detail'>
-        <h4>{ name }</h4>
-      </Link>
+      <h4>{ name }</h4>
     </div>
   )
 }
