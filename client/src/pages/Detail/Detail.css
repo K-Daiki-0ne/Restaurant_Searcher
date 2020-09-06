@@ -1,9 +1,14 @@
 .detail {
   height: 100%;
+  justify-content: center;
+  display: flex;
 }
 
 .detail-content {
   display: flex;
-  height: 100%;
+  width: 80%;
+  height: 70%;
   justify-content: center;
+  margin-top: 8.5%;
+  background-color: aqua;
 }
