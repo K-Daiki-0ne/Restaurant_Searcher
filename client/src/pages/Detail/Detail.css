@@ -10,5 +10,7 @@
   height: 70%;
   justify-content: center;
   margin-top: 8.5%;
-  background-color: dimgrey;
+  background-color: #f5f5f5;
+  box-shadow: 0 0 8px grey;
+  border-radius: 15px;
 }
