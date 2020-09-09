@@ -8,7 +8,7 @@ class GetApiData
 {
 	public static function getRestaurant($lat, $lon) {
         $base_url = Url::baseUrl();
-        $url = "{$base_url}&latitude={$lat}&longitude={$lon}";
+        $url = "{$base_url}&latitude={$lat}&longitude={$lon}&range=5";
         $result = ApiRequest::request($url);
         return $result;
     }

@@ -16,7 +16,7 @@ class RestaurantController extends Controller
 
    public function detail($id) {
        $result = GetApiData::getDetailRestaurant($id);
-       $data = $result['rest'];
+       $data = $result;
        return response() -> json($data); 
    }
 }
