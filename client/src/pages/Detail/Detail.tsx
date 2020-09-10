@@ -15,8 +15,8 @@ export function Detail() {
   const id: string | null = query.get("id");
 
   useEffect(() => {
-    detailRestaurantRequest()
-      .then((result: any) => setDetailRestaurant(result))
+    const response = detailRestaurantRequest();
+    response.then((data: any) => setDetailRestaurant(data));
   }, [])
 
   const detailRestaurantRequest = async () => {

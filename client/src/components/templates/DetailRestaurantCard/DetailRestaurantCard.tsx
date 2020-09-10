@@ -1,7 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { userCurrentDetailRestaurant } from '../../../store/atoms/detailRestaurant';
+import { useRecoilValue } from 'recoil';
 import './DetailRestaurantCard.css';
 
 export const DetailRestrauntCard: React.FC = () => {
+  const detailRest = useRecoilValue(userCurrentDetailRestaurant);
+
+  useEffect(() => {
+    console.log(detailRest)
+  }, [])
+
   return (
     <div className='detail-restaurant-card'>
       <div className='detail-rest-name-content'>
