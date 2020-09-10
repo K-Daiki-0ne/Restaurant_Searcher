@@ -26,11 +26,8 @@ export const ListRestaurantCard: React.FC<ListProps> = ({ restaurant }) => {
             </div>
             <div className="border-line"></div>
             <p className="card-text">
-              Card using html/css with clip path effets.
-              lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia dolorem ipsa voluptas, iste illo atque repellat! Expedita dolor laboriosam officiis.
-              amet consectetur adipisicing elit. Quia dolorem ipsa voluptas, iste illo atque repellat! Expedita dolor laboriosam officiis.
-              ipsa voluptas, iste illo atque repellat! Expedita dolor laboriosam officiis.
-              amet consectetur adipisicing elit. Quia dolorem ipsa voluptas, iste illo atque repellat! Expedita dolor laboriosam officiis.
+              {restaurant.address}
+              {restaurant.opentime}
             </p>
           </div>
         </div>
