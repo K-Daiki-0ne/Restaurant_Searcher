@@ -5,6 +5,7 @@ import { useQuery } from '../../hook/useQuery';
 import { userCurrentDetailRestaurant } from '../../store/atoms/detailRestaurant';
 import { useRecoilState } from 'recoil';
 import { detailRestRequest } from '../../api/detailRestRequest';
+import { parseArray } from '../../lib/parse';
 import './Detail.css';
 
 export function Detail() {
@@ -20,12 +21,8 @@ export function Detail() {
 
   const detailRestaurantRequest = async () => {
     const result: any = await detailRestRequest(id);
-    console.log(JSON.stringify(result))
-    var rv: any = {};
-    for (var i = 0; i < result.length; ++i)
-    rv[i] = result[i];
-    console.log(rv[0])
-    return result
+    const data: any = parseArray(result);
+    return data
   }
 
   return (
