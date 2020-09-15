@@ -1,29 +1,28 @@
 import React, { useState, useEffect } from 'react';
+import { useRecoilValue } from 'recoil';
+import { detailCurrentRestaurantImage } from '../../../store/selectors/detailRestaurant';
 
-type DetailRestaurantImage = {
-  qrcode: string;
-  shop_image1: string;
-  shop_image2: string;
-}
 
-type DetailRestaurantImageProps = {
-  images: DetailRestaurantImage
-}
-
-export const DetailImageCard: React.FC<DetailRestaurantImageProps> = ({ images }): JSX.Element => {
+export const DetailImageCard: React.FC = (): JSX.Element => {
   const [isImage, setImage] = useState<boolean>(false);
+  const detailRestaurantImage = useRecoilValue(detailCurrentRestaurantImage);
 
   useEffect(() => {
-    if(images.shop_image1) {
-      setImage(true);
-    } else {
+    setImage(false);
+    try {
+      if(detailRestaurantImage.shop_image1) {
+        setImage(true);
+      } else {
+        setImage(false);
+      }
+    } catch (err) {
       setImage(false);
     }
-  }, [images.shop_image1])
+  }, [])
 
   return isImage ? (
     <div>
-      <img src={images.shop_image1} className='restaurant-image' />
+      <img src={detailRestaurantImage.shop_image1} className='restaurant-image' />
     </div>
   ) : (
     <div>
