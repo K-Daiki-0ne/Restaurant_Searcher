@@ -6,6 +6,7 @@ import {
   DetailRestaurantAdressText,
   DetailRestaurantPr
 } from '../../atoms/index';
+import { DetailImageCard } from '../../organisms/index';
 import './DetailRestaurantCard.css';
 
 export const DetailRestrauntCard: React.FC = () => {
@@ -25,7 +26,7 @@ export const DetailRestrauntCard: React.FC = () => {
       <div className='detail-rest-grid-content'>
         <div className='detail-rest-low-grid-left-content'>
           <div className='detail-image'>
-            aaa
+            <DetailImageCard />
           </div>
           <div className='detail-pr'>
             <DetailRestaurantPr />
