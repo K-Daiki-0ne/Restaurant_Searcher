@@ -2,6 +2,10 @@
 
 ![img](img/Icon.jpg)
 
+当コンテンツはまだ完成していません。
+
+現在はまだ開発途中なので、コンテンツの利用はおすすめしません。
+
 ## Restaurant Searcherについて
 
 - Restaurant Searcherはあなたの周りの飲食店を検索してくれます。
