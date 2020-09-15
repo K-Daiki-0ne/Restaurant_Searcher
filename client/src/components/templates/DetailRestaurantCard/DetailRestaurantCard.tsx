@@ -3,7 +3,8 @@ import { userCurrentDetailRestaurant } from '../../../store/atoms/detailRestaura
 import { useRecoilValue } from 'recoil';
 import { 
   DetailRestaurantTitle,
-  DetailRestaurantAdressText
+  DetailRestaurantAdressText,
+  DetailRestaurantPr
 } from '../../atoms/index';
 import './DetailRestaurantCard.css';
 
@@ -27,7 +28,7 @@ export const DetailRestrauntCard: React.FC = () => {
             aaa
           </div>
           <div className='detail-pr'>
-            ddd
+            <DetailRestaurantPr />
           </div>
         </div>
         <div className='detail-rest-low-grid-content'>
