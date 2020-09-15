@@ -17,7 +17,7 @@ export { ListRestaurantAdressText } from './ListRestaurantAdressText/ListRestaur
 export { ListRestaurantNoImageText } from './ListRestaurantNoImageText/ListRestaurantNoImageText';
 export { ListRestaurantTitle } from './ListRestaurantTitle/ListRestaurantTitle';
 export { DetailRestaurantAdressText } from './DetailRestaurantAdressText/DetailRestaurantAdressText';
-export { DetailRestaurantNoImageText } from './DetailRestaurantNoImageText/DetailRestaurantNoImageText';
+export { DetailRestaurantNoImageText } from './DetailRestaurantImage/DetailRestaurantImage';
 export { DetailRestaurantTitle } from './DetailRestaurantTitle/DetailRestaurantTitle';
 export { ErrorIcon } from './ErrorIcon/ErrorIcon';
 export { ErrorText } from './ErrorText/ErrorText';
