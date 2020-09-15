@@ -1,7 +1,10 @@
 import React, { useEffect } from 'react';
 import { userCurrentDetailRestaurant } from '../../../store/atoms/detailRestaurant';
 import { useRecoilValue } from 'recoil';
-import { DetailRestaurantTitle } from '../../atoms/index';
+import { 
+  DetailRestaurantTitle,
+  DetailRestaurantAdressText
+} from '../../atoms/index';
 import './DetailRestaurantCard.css';
 
 export const DetailRestrauntCard: React.FC = () => {
@@ -29,7 +32,7 @@ export const DetailRestrauntCard: React.FC = () => {
         </div>
         <div className='detail-rest-low-grid-content'>
           <div className='detail-adress'>
-            bbb
+            <DetailRestaurantAdressText />
           </div>
           <div className='detail-map'>
             ccc
