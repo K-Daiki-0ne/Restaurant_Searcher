@@ -3,7 +3,6 @@ import './AppFooter.css';
 import {
   FooterAuthorText,
   FooterApiText,
-  FooterImageUrlText
 } from '../../atoms/index';
 
 export function AppFooter() {
@@ -11,7 +10,7 @@ export function AppFooter() {
     <footer className='footer'>
       <FooterAuthorText />
       <FooterApiText />
-      <FooterImageUrlText />
+      {/* <FooterImageUrlText /> */}
     </footer>
   )
 }

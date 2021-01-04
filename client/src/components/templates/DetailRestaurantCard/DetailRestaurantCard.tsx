@@ -19,9 +19,9 @@ export const DetailRestrauntCard: React.FC = () => {
   return (
     <div className='detail-restaurant-card'>
       <div className='detail-rest-name-content'>
-        <h1 className='detail-name'>
+        <div className='detail-name'>
           <DetailRestaurantTitle />
-        </h1>
+        </div>
       </div>
       <div className='detail-rest-grid-content'>
         <div className='detail-rest-low-grid-left-content'>
