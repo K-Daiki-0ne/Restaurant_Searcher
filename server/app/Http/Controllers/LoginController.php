@@ -17,6 +17,10 @@ class LoginController extends Controller
         $name = UserForm::where('name', $user_name)
             ->where('password', $user_password)
             ->first();
+        
+        if (!$name) {
+            return response() -> json("Not register user");
+        }
 
         return response() -> json($name);
     }

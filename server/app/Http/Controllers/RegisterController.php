@@ -21,7 +21,7 @@ class RegisterController extends Controller
 
             $result = $user::where("name", $user_name)->get();
 
-            if (result < 1) {
+            if ($result < 1) {
                 $user->save();
                 return response() 
                 -> json($user);
