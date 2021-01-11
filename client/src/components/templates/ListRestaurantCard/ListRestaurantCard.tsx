@@ -14,13 +14,13 @@ type ListProps = {
 
 export const ListRestaurantCard: React.FC<ListProps> = ({ restaurant }) => {
   return (
-    <div>
+    <div className='list-restaurant-card'>
       <Link to={`/detail?id=${restaurant.id}`} className='link'>
         <div className="card-section">
-          <div className='card-img-top'>
-            <ListImageCard images={restaurant.image_url} />
-          </div>
           <div className="card-body">
+            <div className='card-img-top'>
+              <ListImageCard images={restaurant.image_url} />
+            </div>
             <div className="card-title">
               <ListTitle name={restaurant.name} />
             </div>

@@ -25,12 +25,8 @@ export const ListImageCard: React.FC<RestaurantImageProps> = ({ images }) => {
   }, [images.shop_image1])
 
   return isImages ? (
-    <div>
       <img src={images.shop_image1} className='restaurant-image' />
-    </div>
   ) : (
-    <div>
       <img src={require('./noimage.png')} className='restaurant-image' />
-    </div>
   )
 }
