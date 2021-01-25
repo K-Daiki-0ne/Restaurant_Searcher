@@ -22,7 +22,7 @@ export const ListRestaurantCard: React.FC<ListProps> = ({ restaurant }) => {
       <Link to={`/detail?id=${restaurant.id}`} className='link'>
       <div className='restaurant-card'>
         <div className='card-header'>
-          <ListImageCard images={image} />
+          <ListImageCard images={restaurant.image_url} />
           <button className='favorite-btn'>
             <i className='fas fa-heart'></i>
           </button>
