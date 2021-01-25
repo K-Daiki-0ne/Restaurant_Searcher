@@ -32,3 +32,11 @@ export const detailCurrentRestaurantPr = selector({
     return detailRestPr.pr
   }
 })
+
+export const detailCurrentRestaurntCategory = selector({
+  key: 'detailCurrentRestaurntCategory',
+  get: ({ get }) => {
+    const detailRestCategory = get(userCurrentDetailRestaurant);
+    return detailRestCategory.category
+  }
+})
